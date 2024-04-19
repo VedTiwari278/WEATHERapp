@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #f7f6f8;
 }
 
 body {
-    /* background-image: url("assets/weather.png"); */
     font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
     height: 100vh;
@@ -14,10 +14,13 @@ body {
     justify-content: center;
     padding: 50px 50px;
     transition: transform 0.6s;
+    background-color: rgb(201, 144, 144);
+
+
 }
 
 .box {
-    box-shadow: 10px 80px 80px 100px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 80px 80px 100px rgba(244, 244, 244, 0.2);
     border-radius: 30px;
     border: 10px solid transparent;
     backdrop-filter: blur(10px);
@@ -27,15 +30,13 @@ body {
     overflow: auto;
     height: fit-content;
     padding-bottom: 10px;
-    background-image: url("assets/weather.png");
     background-repeat: no-repeat;
-    background-size: cover;
     width: min-content;
-}
+    background-color: rgb(188, 90, 90);
 
-.box img {
-    border-radius: 2rem;
-    background-color: black;
+}
+.box img{
+    border-radius:2rem;
 }
 
 .search {
@@ -45,9 +46,12 @@ body {
     color: rgb(149, 29, 29);
 }
 
+
 .box input::placeholder {
-    color: #282628;
-    color: black;
+    color: #fffcff;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
 }
 
 .box input {
@@ -62,19 +66,20 @@ body {
     outline: none;
     box-shadow: inset 2px 2px 3px #ffffff,
         inset -2px -2px 3px #d4d3d4;
+
 }
 
 .box button {
     height: 3rem;
     width: 3.8rem;
     font-size: 1.5rem;
-    margin: 22px 20px 0px -66px;
+    margin: 22px 20px 0px -70px;
     border-radius: 50px;
-    border: 1px solid rgb(6, 0, 11);
-    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(209, 111, 111);
+    background-color: rgb(210, 91, 91);
     color: #ffffff;
-    box-shadow: 1px 1px 2px #f3f3f3,
-        -1px -1px 2px #ffffff;
+    box-shadow: 1px 1px 2px #c15a5a,
+        -1px -1px 2px #d24949;
     cursor: pointer;
     position: relative;
 }
@@ -91,9 +96,11 @@ body {
 
 .weather {
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(230, 73, 73);
     transition: transform 0.8s ease;
     padding-bottom: 10px;
+
+
 }
 
 .weather img {
@@ -117,10 +124,11 @@ body {
     margin-top: -5px;
     transition: 0.8s ease;
     text-align: center;
+
 }
 
 .detail {
-    color: rgb(255, 254, 255);
+    color: rgb(195, 11, 195);
     display: flex;
     justify-content: space-between;
     margin-right: 10px;
@@ -132,7 +140,7 @@ body {
 .col {
     display: flex;
     align-items: center;
-    text-align: left;
+    text-align: left
 }
 
 .col img {
@@ -140,17 +148,19 @@ body {
     margin-left: 39px;
     margin-top: 5px;
     position: absolute;
+
 }
 
 .detail div {
     font-size: 18px;
     margin-right: 20px;
     font-weight: 800;
+
 }
 
 .search div .fa {
     font-size: 1.8rem;
-    color: rgb(255, 255, 255);
+    color: rgb(192, 43, 43);
     position: absolute;
     top: 2rem;
     left: 2.5rem;
@@ -168,39 +178,46 @@ h4 {
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
     color: #f7f6f8;
+
+
 }
 
 @media (max-width: 600px) {
+
     .box {
-        width: 100% !important;
-        overflow: auto;
+
+      width: 100% !important;
+
+      overflow: auto;
     }
 
-    .search input {
+    .search input{
         width: 95% !important;
-        height: 95% !important;
+        height:  95% !important;
+
     }
 
-    .search button {
-        margin: 20px 20px 0px -63px;
-    }
+   .search button{
+    margin: 20px 20px 0px;
 
-    .search div .fa {
-        font-size: 1.8rem;
-        color: rgb(255, 255, 255);
-        position: absolute;
-        margin: 0px 20px 0px 2px;
-    }
+   }
 
-    .col img {
-        width: 29px;
-        margin-left: 13px;
-        margin-top: 5px;
-        position: absolute;
-    }
+.search div .fa {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
 
-    .detail div {
-        font-size: 90%;
-        margin-right: 4px;
-    }
+    margin: 0px 20px 0px 2px 
+}
+.col img {
+    width: 29px;
+    margin-left: 13px;
+    margin-top: 5px;
+    position: absolute;
+}
+.detail div{
+    font-size: 90%;
+    margin-right: 4px;
+}
+
 }
