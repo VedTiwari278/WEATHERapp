@@ -221,3 +221,18 @@ h4 {
 }
 
 }
+marquee{
+    margin-top:10px;
+    font-size: 40px;
+    width: 700px;
+    background-color: rgb(253, 7, 7);
+    font-family: robot;
+    font-weight: 700;
+}
+span{
+    font-size: 10px;
+    color: rgb(152, 215, 236);
+    margin-left:30px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
