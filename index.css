@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -15,7 +14,6 @@ body {
     justify-content: center;
     padding: 50px 50px;
     transition: transform 0.6s;
-
 }
 
 .box {
@@ -33,10 +31,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: min-content;
-
 }
-.box img{
-    border-radius:2rem;
+
+.box img {
+    border-radius: 2rem;
     background-color: black;
 }
 
@@ -47,11 +45,9 @@ body {
     color: rgb(149, 29, 29);
 }
 
-
 .box input::placeholder {
     color: #282628;
     color: black;
-
 }
 
 .box input {
@@ -66,7 +62,6 @@ body {
     outline: none;
     box-shadow: inset 2px 2px 3px #ffffff,
         inset -2px -2px 3px #d4d3d4;
-
 }
 
 .box button {
@@ -99,8 +94,6 @@ body {
     color: rgb(255, 255, 255);
     transition: transform 0.8s ease;
     padding-bottom: 10px;
-
-
 }
 
 .weather img {
@@ -124,7 +117,6 @@ body {
     margin-top: -5px;
     transition: 0.8s ease;
     text-align: center;
-
 }
 
 .detail {
@@ -140,7 +132,7 @@ body {
 .col {
     display: flex;
     align-items: center;
-    text-align: left
+    text-align: left;
 }
 
 .col img {
@@ -148,14 +140,12 @@ body {
     margin-left: 39px;
     margin-top: 5px;
     position: absolute;
-
 }
 
 .detail div {
     font-size: 18px;
     margin-right: 20px;
     font-weight: 800;
-
 }
 
 .search div .fa {
@@ -178,46 +168,39 @@ h4 {
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
     color: #f7f6f8;
-
-
 }
 
 @media (max-width: 600px) {
-
     .box {
-
-      width: 100% !important;
-
-      overflow: auto;
+        width: 100% !important;
+        overflow: auto;
     }
 
-    .search input{
+    .search input {
         width: 95% !important;
-        height:  95% !important;
-
+        height: 95% !important;
     }
 
-   .search button{
-    margin: 20px 20px 0px -63px;
+    .search button {
+        margin: 20px 20px 0px -63px;
+    }
 
-   }
+    .search div .fa {
+        font-size: 1.8rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        margin: 0px 20px 0px 2px;
+    }
 
-.search div .fa {
-    font-size: 1.8rem;
-    color: rgb(255, 255, 255);
-    position: absolute;
+    .col img {
+        width: 29px;
+        margin-left: 13px;
+        margin-top: 5px;
+        position: absolute;
+    }
 
-    margin: 0px 20px 0px 2px 
-}
-.col img {
-    width: 29px;
-    margin-left: 13px;
-    margin-top: 5px;
-    position: absolute;
-}
-.detail div{
-    font-size: 90%;
-    margin-right: 4px;
-}
-
+    .detail div {
+        font-size: 90%;
+        margin-right: 4px;
+    }
 }
